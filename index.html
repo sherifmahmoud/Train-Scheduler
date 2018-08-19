@@ -22,15 +22,28 @@
             <div class="sectionHeader">
                 Current Train Schedule
             </div>
-            <table id="trains">
-                <tr>
-                    <th>Train Name</th>
-                    <th>Destination</th>
-                    <th>Frequency</th>
-                    <th>Next Arrival</th>
-                    <th>Minutes Away</th>
-                </tr>
-            </table>
+            <div id="tableHeader">
+                <table id="trainsHeader">
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="tableData">
+                <table id="trains">
+                    <tr class="hidden">
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div id="inputForm" class="pageSection">
             <div class="sectionHeader">
@@ -41,7 +54,7 @@
                 <input type="text" id="name"><br>
                 <label for="destination">Destination</label><br>
                 <input type="text" id="destination"><br>
-                <label for="firstTrain">First Train Time (HH:mm- military time</label><br>
+                <label for="firstTrain">First Train Time (HH:mm- military time)</label><br>
                 <input type="time" step="60" id="firstTrain"><br>
                 <label for="number">Frequency (min)</label><br>
                 <input type="text" id="frequency">
